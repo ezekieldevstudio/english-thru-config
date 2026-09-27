@@ -1,0 +1,7 @@
+.env*
+*.jks
+*.keystore
+signing.properties
+credentials.json
+keys/
+secrets/
