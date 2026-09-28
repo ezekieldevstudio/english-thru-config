@@ -1,0 +1,19 @@
+# Secrets stay in C:/dev/EzekielDev/keys/<project>/; prevent accidental commits.
+.env.*
+keys/
+secrets/
+*.jks
+*.keystore
+*.key
+*.pem
+*.p8
+*.p12
+*.mobileprovision
+signing.properties
+credentials.json
+*service-account*.json
+serviceAccount*.json
+*service_role*
+*service-role*
+*secret*.json
+*secret*.env

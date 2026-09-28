@@ -5,6 +5,8 @@
 - `index.html`: 지원 홈
 - `privacy.html`: 개인정보처리방침
 - `delete-account.html`: 계정 삭제 요청 안내
+- `terms.html`: 이용약관
+- `faq.json`, `notice.json`: 초기 FAQ·공지 (기존 파일명과 배열 형식 유지)
 - `styles.css`: 공통 반응형 스타일
 - `.nojekyll`: 정적 파일 그대로 제공
 
