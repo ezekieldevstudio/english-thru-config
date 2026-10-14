@@ -1,5 +1,33 @@
 # English Thru Support
 
+## 최신 관리 현황 — 2026-10-14
+
+- 앱: English Thru / com.englishthru.app / 앱 프로젝트: english-thru
+- 로컬 경로: C:\dev\EzekielDev\english-thru-config
+- 앱 단계: 1.0 운영 / 2.0 내부 테스트 준비
+- Play: 1.0.0 / code 1 · 대한민국 프로덕션 정식 출시(10/11 사용자 확인)
+- 소스/native: 2.0.0 / 2 (세부 불일치·목표는 앱 README 참고)
+
+### 공개 파일과 운영
+
+index.html, privacy.html, terms.html, delete-account.html, faq.json, notice.json, styles.css
+
+로컬 정책·지원 문서 존재. 이번 공개 URL/서버 조회 없음. 공개 정적 파일용 저장소이며 앱 package/versionCode와 별도의 콘텐츠 형식을 유지한다. Secret·서명 파일·사용자 기록을 넣지 않는다.
+
+### 현재 문제 / 다음 작업
+
+2.0 Guest·퍼즐·계정 전환·생명제와 FAQ/정책 설명 일치 검토 필요. 현재 정책의 서버 처리·삭제 운영은 실제 서비스 설정과 별도 확인.
+
+### 개발 및 변경 이력 — 최신 날짜순
+
+2026-09-29 cfb4cb8은 Git 동기화 기록이며 정책 게시일로 단정하지 않는다.
+
+기존 JSON·정책 본문은 이번에 수정하지 않았다. 로컬 Git만으로 원격 게시 완료를 선언하지 않는다. [앱 최신 README](../english-thru/README.md)에서 빌드·테스트·실기기 상태와 다음 작업을 함께 관리한다.
+
+## 기존 운영 안내 및 작성 당시 기록
+
+이하 게시 전/미구현 표현은 작성 당시 기록이다. 현재 상태는 상단을 우선한다.
+
 한국어 공개 정책·지원 페이지입니다. HTML/CSS만 사용하며 설치나 빌드 과정이 없습니다.
 
 - `index.html`: 지원 홈
