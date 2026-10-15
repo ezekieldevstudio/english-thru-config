@@ -1,11 +1,11 @@
 # English Thru Support
 
-## 최신 관리 현황 — 2026-10-14
+## 최신 관리 현황 — 2026-10-15
 
 - 앱: English Thru / com.englishthru.app / 앱 프로젝트: english-thru
 - 로컬 경로: C:\dev\EzekielDev\english-thru-config
-- 앱 단계: 1.0 운영 / 2.0 내부 테스트 준비
-- Play: 1.0.0 / code 1 · 대한민국 프로덕션 정식 출시(10/11 사용자 확인)
+- 앱 단계: 2.0 프로덕션 업데이트 Google 검토 중 / UI 시안 반영 후 실기기 확인 대기
+- Play: 2.0.0 / code 2 · 프로덕션 업데이트 제출, Google 검토 중. 기존 정식 게시 확인값 1.0.0 / code 1
 - 소스/native: 2.0.0 / 2 (세부 불일치·목표는 앱 README 참고)
 
 ### 공개 파일과 운영
@@ -19,6 +19,8 @@ index.html, privacy.html, terms.html, delete-account.html, faq.json, notice.json
 2.0 Guest·퍼즐·계정 전환·생명제와 FAQ/정책 설명 일치 검토 필요. 현재 정책의 서버 처리·삭제 운영은 실제 서비스 설정과 별도 확인.
 
 ### 개발 및 변경 이력 — 최신 날짜순
+
+2026-10-15 사용자 제출/심사 상태와 앱 README 동기화. 공개 JSON·정책 내용 및 배포 상태는 새로 검증하지 않았다.
 
 2026-09-29 cfb4cb8은 Git 동기화 기록이며 정책 게시일로 단정하지 않는다.
 
