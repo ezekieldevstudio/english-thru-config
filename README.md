@@ -1,6 +1,10 @@
 # English Thru Support
 
-## 최신 관리 현황 — 2026-10-15
+## 탈퇴 운영 최신 지침 — 2026-11-19
+
+English Thru의 `delete-account` v2는 English Thru 전용 서버 데이터만 정리합니다. [앱 변경 이력](https://github.com/ezekieldevstudio/english-thru/commit/e2bac0dd9f34d44225ea268d64148d3373f4d700)을 참고하세요. 공통 로그인 계정과 다른 앱 데이터는 보존합니다. 이메일 요청 처리에도 아래 동일 범위를 적용합니다. 앱 버전, 인증 설정, 서버 함수 및 기존 사용자 데이터는 이번 지원 문구 수정 범위가 아닙니다.
+
+## 관리 기록 — 2026-10-15
 
 - 앱: English Thru / com.englishthru.app / 앱 프로젝트: english-thru
 - 로컬 경로: C:\dev\EzekielDev\english-thru-config
@@ -64,8 +68,8 @@ Repository Settings → Pages → Build and deployment:
 ## 계정 삭제 운영 절차
 
 1. 등록된 로그인 이메일을 통해 요청자 본인 및 삭제 의사를 확인합니다. 제3자의 요청만으로 계정을 삭제하지 않습니다.
-2. 해당 사용자 ID에 연결된 실제 서버 사용자 데이터를 확인합니다. `profiles` 자동 삭제(cascade)를 가정하지 않습니다. 존재하는 관련 데이터를 삭제하고 Supabase Dashboard의 Authentication → Users에서 해당 Auth 사용자를 삭제합니다.
-3. 삭제 결과를 확인한 뒤 요청자에게 안내합니다. 서버 삭제는 기기의 AsyncStorage를 지우지 않으므로 페이지의 기기 데이터 삭제 방법도 안내합니다.
+2. 본인 확인을 마친 요청자에 대응하는 내부 사용자 ID를 확인합니다. 승인된 운영 절차로 English Thru 전용 삭제 처리(`english_thru_delete_account_data`)를 사용합니다. 범위는 `course_progress`, `sentence_progress`, `study_sessions`, `push_devices`, `profiles`의 해당 사용자 데이터입니다. 확인된 앱 범위 처리 경로가 없거나 실패하면 완료로 답변하지 말고 운영 담당자가 확인하도록 보류합니다. **Dashboard에서 공통 Auth 사용자를 직접 삭제하지 않습니다.** 다른 앱 데이터, 공통 인증 사용자 및 세션을 건드리지 않습니다.
+3. English Thru 서버 데이터의 삭제 결과를 확인한 뒤 요청자에게 처리 범위를 안내합니다. 이메일 요청은 어떤 기기의 앱 데이터도 직접 지우지 않으므로, 기기별 삭제 방법과 공통 로그인 정보의 보존을 함께 안내합니다.
 4. 처리 목적이 끝난 문의·삭제 요청 이메일을 삭제합니다. 실제 보존 의무가 있다면 항목, 근거 및 기간을 사용자에게 설명합니다.
 
 기존 발급 액세스 토큰은 만료까지 유효할 수 있으므로 즉각적인 모든 기기 로그아웃을 약속하지 않습니다. 관리자 자격 증명이나 사용자 정보는 이 공개 저장소에 보관하지 않습니다.
